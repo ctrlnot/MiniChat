@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+}
+
+html,
+body {
+  color: #ccc;
+  min-height: 100%;
+  overflow: hidden;
+  background: #1E1F36;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.chat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  padding: 25px;
+  background: #232A4E;
+  background: -webkit-linear-gradient(#232A4E, #4D4772);
+  background: -moz-linear-gradient(#232A4E, #4D4772); 
+  background: -o-linear-gradient(#232A4E, #4D4772); 
+  background: linear-gradient(#232A4E, #4D4772);
+  box-shadow: 0 0 15px #000;
+}
+
+.chat-name {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: transparent;
+  border: 0;
+  border-left: 4px solid #67C1CC;
+  color: #fff;
+  font: 18px 'Open Sans', sans-serif;
+}
+
+.chat-messages {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.chat-message {
+  height: 100%;
+  display: block;
+  border-radius: 8px;
+  background: #232343;
+  margin: 0 15px 15px 0;
+  padding: 12px 16px 12px 16px;
+  color: #fff;
+  font: 14px 400 'Open Sans', sans-serif;
+}
+
+.others {
+  font-size: 12px;
+  color: #F17C7C;
+  padding-bottom: 5px;
+}
+
+.you {
+  font-size: 12px;
+  color: #B2D58A;
+  padding-bottom: 5px;
+}
+
+textarea {
+  resize: none;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 35px;
+  max-width: 100%;
+  margin: 5px 0;
+  padding: 5px;
+  background: transparent;
+  color: #ddd;
+  border: 0;
+  border-bottom: 2px solid #67C1CC;
+  font: 14px 'Open Sans', sans-serif;
+}
